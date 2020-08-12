@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ApiDAO">
+	
+	<!-- RESTAPI Framework 쿼리 -->
+	<select id="selectDualTable"
+			parameterType="Map" resultType="Map">
+		<![CDATA[
+			select '손창락' as author
+				  ,'rest-api-framework' as app_name
+				  ,'0.0.1' as version
+			  from dual  	 
+		]]>
+	</select>
+	
+</mapper>
